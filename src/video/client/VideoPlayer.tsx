@@ -43,7 +43,7 @@ export default function VideoPlayer() {
       </div>
 
       {videoUrl && (
-        <MpegTsPlayer src={videoUrl} />
+        <MpegTsPlayer src={`https://yandex-video-proxy.onrender.com/proxy?url=${encodeURIComponent(videoUrl)}`} />
         // <video width="640" height="360" controls style={{ marginTop: '1rem' }}>
         //   <source src={videoUrl} type="video/mp2t" />
         //   Ваш браузер не поддерживает видео.
